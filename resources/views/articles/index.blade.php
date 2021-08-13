@@ -3,7 +3,7 @@
 @section('title', '記事一覧')
 
 @section('content')
-  @include('nav') {
+  @include('nav') 
   <div class="container">
     @foreach($articles as $article) {{--この行を追加--}}
       <div class="card mt-3">
