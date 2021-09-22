@@ -57,14 +57,16 @@
 
         this.isLikedBy = true
         this.countLikes = response.data.countLikes
+        this.gotToLike = true
       },
       async unlike() {
         const response = await axios.delete(this.endpoint)
 
         this.isLikedBy = false
         this.countLikes = response.data.countLikes
+        this.gotToLike = false
       },
     },
-
   }
+</script>
 </script>
